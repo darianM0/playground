@@ -1,0 +1,143 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header{
+  background-color: #262626;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+.navbar{
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px
+}
+
+.nav-branding{
+  font-size: 2rem;
+}
+
+.nav-link{
+  transition: 0.7s ease;
+}
+
+.nav-link:hover{
+  color: dodgerblue;
+}
+
+.hamburger{
+  display: none;
+  cursor: pointer;
+}
+
+.bar{
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transistion: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+@media(max-width:768px){
+  .hamburger{
+    display: block;
+  }
+
+  .hamburger.active .bar:nth-child(2){
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3){
+    transform: translateY(8px) rotate(-45deg);
+  }
+
+  .nav-menu{
+    position:fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #262626;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+  }
+
+  .nav-item{
+    margin: 16px 0;
+  }
+
+  .nav-menu.active{
+    left:0;
+  }
+
+
+}
+
+p {
+    color: green;
+
+}
+
+body {
+    background-color: black;
+  }
+  
+h1 {
+  font-size: 24px;
+}
+
+.text {
+  color: green;
+}
+
+#smiley {
+  width: 300px;
+  height: auto;
+}
+
+/* Media query that shrinks width of smiley face to 300px when viewport is equal to or smaller than 400px */
+/* @media only screen and (max-width: 400px) {
+    #smiley {
+      width: 300px;
+    }
+  } */
+
+  /* #smiley {
+    /* Percentage width instead of pixels to make smiley face scale fluidly */
+    /* width: 50%;
+    height: auto;
+} */ 
+
+/* Media query to set smiley face's width to percentage when viewport is equal to or smaller than 300px */
+  @media only screen and (max-width: 300px) {
+      #smiley {
+        max-width: 300px;
+        width: 100%;
+    }
+  }

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+    <head>
+
+
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Deejay's Playground</title>
+        <script src="components/header.js" type="text/javascript" defer></script>
+
+
+    </head>
+
+
+    <body>
+        <header-component></header-component>
+        <main></main>
+        <!-- <header>
+            <nav class="navbar">
+                <a hrer="#" class="nav-branding">DEEJAY'S PLAYGROUND</a>
+
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Beer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Video Games</a>
+                    </li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header> -->
+        <script src="script.js"></script>
+        
+        <h1>Welcome to Everything</h1>
+
+        <!-- A paragraph -->
+        <p>Just a place where I've decided to drop all the things going on in my head </p>
+        
+        <p>Testing 1 2 3 4</p>
+
+        <!-- Image of smiley face -->
+        <!-- <img alt="Smiley face" src="https://assets.codepen.io/6093409/smiley-face.png"> -->
+        <img id="smiley" alt="Smiley face" src="https://assets.codepen.io/6093409/smiley-face.png">
+         <!-- Adding our JavaScript in the script tag -->
+        <script>
+        // Identifying our image
+            const smiley = document.querySelector("#smiley");
+
+        // Adding reaction when image is clicked
+            smiley.addEventListener("click", () => {
+            alert(`Smiley says "Welcome!"`);
+            });
+      </script>
+      
+    </body> 
+
+
+</html>
+
